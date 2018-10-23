@@ -1,0 +1,79 @@
+
+v2.0.0 (2018-10-22)
+	Removed all deprecation functions (isUndefined, print_r, var_dump, objMD5, onEvents)
+	[FIX] Fix JS-Doc
+
+v1.20.2 (2015-11-24)
+	[NEW] Insert into "phone" field type the space
+
+v1.19.0 (2015-08-06)
+	Fix KUtils.check patterns, the type date allows those format: 'Y-m-d', 'Y-d-m', 'm-d-Y', 'd-m-Y'
+
+v1.18.2 (2015-07-27)
+	* Fix KUtils.empty, check if "variabile" is NaN in case of Numeric type
+
+v1.16.2 (2014-11-13
+	* Fix KUtils.trim, check if "str" isn't null
+	* Deprecated KUtils.objMD5(), recommended the use of KUtils.MD5()
+
+v1.16.1 (2014-04-14)
+	* Fix objSize(), check the constructor of argument
+
+v1.16.0 (2014-03-28)
+	* Add KUtils.onEvents
+
+v1.15.0 (2014-02-11)
+	* Add KUtils.array_diff
+	* Add KUtils.objFlip
+	* Add KUtils.objIntersectKey
+	* Add KUtils.objKeyAllowed
+
+v1.14.2
+	* Fix the return of KUtils.benchmark (the count was correct but the string had null values)
+
+v1.14.1
+	* Fix KUtils.dotdotdot - if the string is undefined the string will be return a empty string
+
+v1.14.0
+	* Add KUtils.stripslashes for delete all slashes
+
+v1.13.2
+	* KUtils.inArray - now "needle" can be an array of values to search in haystack
+
+v1.13.1
+	* Fix return of KUtils.print_r({}), now return the string "{}"
+
+v1.13.0
+	* Add method "obj2Array"
+
+v1.12.1
+	* Fix in (new Date()).getFormat()
+		- identifier "u", for get the milliseconds of an date
+		- identifier "c", for get the cents of an date
+
+v1.12.0
+	* Add KUtils.objKeys, from an Object get its keys
+
+v1.11.1
+	* [FIX] KUtils.print_r - Fix the "space" argument and cancel the new line in head of code returned
+
+v1.11.0
+	* KUtils.var_dump implemented
+
+v1.10.1
+	* KUtils.stack if don't exist a stack: return null
+
+v1.9.1
+	* Fix IE8 Object.keys
+
+v1.9.0
+	* Added a function "stack"
+
+v1.8.0
+	* Added a function "objMD5"
+
+v1.4.0
+	* Added three function: "objClone", "benchmark" and "dotdotdot"
+
+v1.3.1
+	* Fix KUtils.inArray (veniva usata una funzione javascript inesistente... [].inArray invece di [].indexOf() //	-.-"
